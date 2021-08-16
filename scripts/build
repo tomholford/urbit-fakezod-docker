@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+BASE="$1"
+: ${BASE:="latest"}
+
+TAG="$2"
+: ${TAG:="fakezod"}
+
+docker build --build-arg base=${BASE} -f Dockerfile -t urbit:${TAG} .

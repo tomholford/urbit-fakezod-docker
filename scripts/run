@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE="asssaf/urbit-fakezod"
+IMAGE="docker.io/library/urbit:fakezod"
 MOUNT="fakezod"
 
 if [ "$1" == "-d" ]

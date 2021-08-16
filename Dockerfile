@@ -1,5 +1,5 @@
-ARG DOCKER_TAG=latest
-FROM asssaf/urbit:$DOCKER_TAG as urbit-base
+ARG BASE=latest
+FROM urbit:$BASE as urbit-base
 
 FROM debian:buster-slim as builder
 

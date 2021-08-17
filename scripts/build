@@ -6,4 +6,4 @@ BASE="$1"
 TAG="$2"
 : ${TAG:="fakezod"}
 
-docker build --build-arg base=${BASE} -f Dockerfile -t urbit:${TAG} .
+docker build --build-arg BASE=${BASE} -f Dockerfile -t urbit:${TAG} .
